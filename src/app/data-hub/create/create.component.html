@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <legend>Add Details Form</legend>
+      <form action="">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Name</label
+          >
+          <input name="Name"
+          [(ngModel)]="dataFormHub.Name"
+            type="text"
+            class="form-control"
+            placeholder="Name"
+          />
+          </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Mobile</label
+          >
+          <input
+          name="Mobile"
+          [(ngModel)]="dataFormHub.Mobile"
+            type="number"
+            class="form-control"
+            placeholder="Mobile"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email</label
+          >
+          <input
+          name="email"
+          [(ngModel)]="dataFormHub.email"
+            type="email"
+            class="form-control"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Channel</label
+          >
+          <input
+          name="channel"
+          [(ngModel)]="dataFormHub.channel"
+            type="text"
+            class="form-control"
+            placeholder=""
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Course</label
+          >
+          <input
+          name="Courses"
+          [(ngModel)]="dataFormHub.Courses"
+            type="text"
+            class="form-control"
+            placeholder=""
+          />
+
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Star Rating</label
+          >
+          <input
+          name="rating"
+            type="number"
+            class="form-control"
+            placeholder="*******"
+            [(ngModel)]="dataFormHub.rating"
+          />
+
+        </div>
+        <div class="col-auto">
+          <button type="submit" (click)="postData()" class="btn btn-primary mb-3">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

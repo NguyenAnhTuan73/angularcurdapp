@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row mt-2 mb-2">
+    <div class="col col-md-4 offset-5">
+      <a routerLink="/data-hub/create" class="btn btn-primary">Add Details</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Email</th>
+            <th scope="col">Channel</th>
+            <th scope="col">Course</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allData">
+            <th scope="row">{{ item.id }}</th>
+            <td>{{ item.Name }}</td>
+            <td>{{ item.Mobile }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.channel }}</td>
+            <td>{{ item.Courses }}</td>
+            <td>{{ item.rating }}</td>
+            <td ><a [routerLink]="['/data-hub/edit', item.id]" class="btn btn-primary" >Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
